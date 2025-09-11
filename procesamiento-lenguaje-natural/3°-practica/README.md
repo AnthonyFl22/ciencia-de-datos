@@ -1,3 +1,20 @@
+# 📘 Práctica 3 – Análisis de asociaciones con PMI
+
+## 🎯 Objetivo
+El propósito de esta práctica fue analizar asociaciones significativas de palabras en títulos de noticias utilizando la medida de **Información Mutua Puntual (PMI, *Pointwise Mutual Information*)**.  
+
+Con ello buscamos identificar pares de palabras que ocurren juntas más frecuentemente de lo esperado por azar, lo cual permite detectar relaciones semánticas en el lenguaje.
+
+---
+
+## 🛠️ Pasos realizados
+
+### 1. Preprocesamiento de texto
+- Conversión a **minúsculas**.  
+- Eliminación de **acentos**.  
+- Eliminación de caracteres especiales y puntuación definidos:  
+
+";:,.\-"'/()[]¿?¡!{}~<>|«»-—’\t\n\r"
 
 
 - Normalización de espacios en blanco.  
@@ -10,9 +27,9 @@
 ### 2. Conjuntos de datos analizados
 Se utilizaron tres archivos CSV con títulos de noticias, trabajando de manera independiente en cada uno:
 
-- `noticias_proceso.csv`
-- `noticias_elpais.csv`
-- `noticias_elfinanciero.csv`
+- `archivo_emojis_Proceso.csv`
+- `archivo_emojis_Elpais.csv`
+- `archivo_emojis_Elfinanciero.csv`
 
 De cada archivo se leyó la columna **`title`**, que fue preprocesada y unida en un solo texto.
 
@@ -56,9 +73,10 @@ Todo el procedimiento se implementó en un **notebook de Jupyter** que:
 
 ---
 
-##  Conclusión
+## ✅ Conclusión
 La práctica permitió:
 - Aplicar técnicas de preprocesamiento de texto.  
 - Construir modelos simples de lenguaje basados en n-gramas.  
 - Identificar asociaciones relevantes en lenguaje natural mediante **PMI**.  
 
+Esto constituye un paso hacia el análisis semántico y la detección de relaciones entre palabras en grandes volúmenes de texto.
