@@ -42,9 +42,8 @@ De cada archivo se leyó la columna **`title`**, que fue preprocesada y unida en
  - Bigramas: `p(x, y)`  
 3. Se aplicó la fórmula de PMI:  
 
- \[
- PMI(x,y) = \log_2 \frac{p(x,y)}{p(x)\,p(y)}
- \]
+ 
+ $PMI(x,y) = \log_2 \frac{p(x,y)}{p(x)\,p(y)}$
 
 4. Se filtraron asociaciones que aparecen **al menos 10 veces** en el texto.  
 5. Se seleccionaron las **10 asociaciones más significativas** con mayor valor de PMI.
