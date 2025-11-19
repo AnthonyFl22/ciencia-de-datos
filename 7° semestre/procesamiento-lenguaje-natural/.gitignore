@@ -15,3 +15,5 @@ venv/
 *.egg
 build/
 dist/
+
+data/
